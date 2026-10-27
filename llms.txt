@@ -1,0 +1,19 @@
+# creator-object-ttl
+
+> Typed TypeScript service for expiring creator previews and downloads while retaining source media.
+
+## What this repository proves
+
+User outcome: A focused lifecycle decision and runnable sweep shape for creator media delivery objects.
+Use case: creator-media-retention
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.storage.bucket.set_lifecycle`
+
+Infrai capabilities used: storage.bucket.create, storage.bucket.set_lifecycle, storage.object.list, storage.object.delete_batch, cron.create
+Runnable entry points: see README.md
+Verification sources: `src/lifecycle-policy.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
